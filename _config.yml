@@ -1,4 +1,2 @@
-theme: minima
-title: Full Name
 plugins:
  - jekyll-sitemap
