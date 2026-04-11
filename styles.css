@@ -1,1 +1,45 @@
 /* css styles */
+
+/* --- Sidebar Item Customization --- */
+
+/* Container for each sidebar item */
+.sidebar-navigation .sidebar-item,
+.sidebar-nav .sidebar-item {
+  position: relative !important;
+  /* Adjust this value to define the left alignment for all text lines */
+  padding-left: 1.1em !important; 
+  display: block !important;
+  text-indent: 0 !important;
+  margin-bottom: 0.4em;
+}
+
+/* Bullet point styling using absolute positioning */
+.sidebar-navigation .sidebar-item-text::before,
+.sidebar-nav .sidebar-item-text::before {
+  content: "•";
+  position: absolute !important;
+  /* Adjust 'left' to change the distance between the bullet and the text */
+  left: 0.3em;
+  top: 0;
+  font-weight: bold;
+  color: var(--bs-secondary, #6c757d);
+}
+
+/* Text block styling to ensure vertical alignment */
+.sidebar-item-text {
+  display: inline-block;
+  line-height: 1.5;
+  vertical-align: top;
+  white-space: normal;
+}
+
+/* Reset for section headers (parent items) if needed */
+.sidebar-item-section,
+.sidebar-item-section > .sidebar-item-container {
+  padding-left: 0 !important;
+  text-indent: 0 !important;
+}
+
+.sidebar-item-section > .sidebar-item-container::before {
+  content: none !important;
+}

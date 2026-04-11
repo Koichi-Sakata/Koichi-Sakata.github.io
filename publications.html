@@ -127,7 +127,7 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -173,32 +173,79 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="./logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publications.html#journals" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Journal Articles</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publications.html#conferences_en" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">International Conferences</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publications.html#conferences_jp" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Domestic Conferences</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publications.html#reviews" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Review Papers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publications.html#dissertation" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dissertation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publications.html#patents" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Domestic Patents</span></a>
+  </div>
+</li>
+    </ul>
     </div>
-<!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
-
-
-
-<nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">Publications</h2>
-   
-  <ul>
-  <li><a href="#journal-articles-peer-reviewed" id="toc-journal-articles-peer-reviewed">Journal Articles (peer-reviewed)</a></li>
-  <li><a href="#international-conference-publications-peer-reviewed" id="toc-international-conference-publications-peer-reviewed">International Conference Publications (peer-reviewed)</a></li>
-  <li><a href="#domestic-conference-publications-non-peer-reviewed" id="toc-domestic-conference-publications-non-peer-reviewed">Domestic Conference Publications (non peer-reviewed)</a></li>
-  <li><a href="#review-papers" id="toc-review-papers">Review Papers</a></li>
-  <li><a href="#dissertation" id="toc-dissertation">Dissertation</a></li>
-  <li><a href="#domestic-patents" id="toc-domestic-patents">Domestic Patents</a></li>
-  </ul>
 </nav>
-<section id="journal-articles-peer-reviewed" class="level2">
-<h2 class="anchored" data-anchor-id="journal-articles-peer-reviewed">Journal Articles (peer-reviewed)</h2>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page-right" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="journals" class="level2">
+<h2 class="anchored" data-anchor-id="journals">Journal Articles (peer-reviewed)</h2>
 <div id="refs-journals" class="references csl-bib-body" data-entry-spacing="0" role="list">
 <div id="ref-Mae2024TMECH" class="csl-entry" role="listitem">
 <div class="csl-left-margin">16. </div><div class="csl-right-inline">Masahiro Mae, Wataru Ohnishi, Hiroshi Fujimoto, <strong>Koichi</strong> <strong>Sakata</strong>, <span>“Multi-axis resonant filter design using frequency response data applied to industrial scan stage,”</span> <em>IEEE/ASME Transactions on Mechatronics</em>, vol. 29, no. 4, pp. 2867–2876, 2024, doi: <a href="https://doi.org/10.1109/TMECH.2024.3402555">10.1109/TMECH.2024.3402555</a>.</div>
@@ -250,8 +297,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="international-conference-publications-peer-reviewed" class="level2">
-<h2 class="anchored" data-anchor-id="international-conference-publications-peer-reviewed">International Conference Publications (peer-reviewed)</h2>
+<section id="conferences_en" class="level2">
+<h2 class="anchored" data-anchor-id="conferences_en">International Conference Publications (peer-reviewed)</h2>
 <div id="refs-conferences_en" class="references csl-bib-body" data-entry-spacing="0" role="list">
 <div id="ref-Mae2026AMC" class="csl-entry" role="listitem">
 <div class="csl-left-margin">38. </div><div class="csl-right-inline">Masahiro Mae, Yu-Pin Hsin, <strong>Koichi</strong> <strong>Sakata</strong>, <span>“Frequency response data-driven multi-axis add-on structure feedback controller design applied to 3-DOF high-precision motion system,”</span> in <em>Proc. IEEE international conference on advanced motion control (AMC)</em>, Mar. 2026, pp. 1–6, doi: <a href="https://doi.org/10.1109/AMC67705.2026.11435856">10.1109/AMC67705.2026.11435856</a>.</div>
@@ -369,8 +416,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="domestic-conference-publications-non-peer-reviewed" class="level2">
-<h2 class="anchored" data-anchor-id="domestic-conference-publications-non-peer-reviewed">Domestic Conference Publications (non peer-reviewed)</h2>
+<section id="conferences_jp" class="level2">
+<h2 class="anchored" data-anchor-id="conferences_jp">Domestic Conference Publications (non peer-reviewed)</h2>
 <div id="refs-conferences_jp" class="references csl-bib-body" data-entry-spacing="0" role="list">
 <div id="ref-Akuzawa2026LD" class="csl-entry" role="listitem">
 <div class="csl-left-margin">25. </div><div class="csl-right-inline">阿久沢駿介, 佐々木怜音, 大西亘, 古関隆章, <strong>坂田晃一</strong>, 金弘中, <span>“複数軌道ILCによる成分分離とRBFNNを用いた固定子間欠配置PMLSMの外乱補償,”</span> in <em>電気学会リニアドライブ/交通・電気鉄道合同研究会, LD-26-004, TER-26-004</em>, Jan. 2026, pp. 17–22.</div>
@@ -449,8 +496,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="review-papers" class="level2">
-<h2 class="anchored" data-anchor-id="review-papers">Review Papers</h2>
+<section id="reviews" class="level2">
+<h2 class="anchored" data-anchor-id="reviews">Review Papers</h2>
 <div id="refs-reviews" class="references csl-bib-body" data-entry-spacing="0" role="list">
 <div id="ref-Sakata2017IEEJJournal" class="csl-entry" role="listitem">
 <div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>坂田晃一</strong>, <span>“FPD露光装置と精密サーボ技術,”</span> <em>電気学会誌</em>, vol. 137, no. 1, pp. 19–22, 2017, doi: <a href="https://doi.org/10.1541/ieejjournal.137.19">10.1541/ieejjournal.137.19</a>.</div>
@@ -465,8 +512,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="domestic-patents" class="level2">
-<h2 class="anchored" data-anchor-id="domestic-patents">Domestic Patents</h2>
+<section id="patents" class="level2">
+<h2 class="anchored" data-anchor-id="patents">Domestic Patents</h2>
 <div id="refs-patents" class="references csl-bib-body" data-entry-spacing="0" role="list">
 <div id="ref-7679639" class="csl-entry" role="listitem">
 <div class="csl-left-margin">17. </div><div class="csl-right-inline">柳原政光, <strong>坂田晃一</strong>, <span>“移動体制御装置及び移動体制御方法,”</span> 特許第7679639号, May 2025.</div>
