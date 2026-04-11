@@ -43,3 +43,21 @@
 .sidebar-item-section > .sidebar-item-container::before {
   content: none !important;
 }
+
+/* Container for sidebar menu (wraps only the menu content) */
+.sidebar-menu-container {
+  display: inline-block;
+  
+  padding: 15px 20px;
+  border: 1px solid #c0dceb;
+  border-radius: 12px;
+  background-color: #c0dceb;
+  
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-top: 10px;
+}
+
+/* Add padding to prevent links from touching the edge of the container */
+.sidebar-item {
+  padding-right: 10px;
+}
